@@ -16,9 +16,8 @@ export default function GameRow({ game, stats, onChange, gameNumber }) {
       <input type="number" placeholder="Tickets Earned" value={game.tickets}
         onChange={(e) => onChange('tickets', e.target.value)}
         className="w-full mb-2 p-2 rounded bg-gray-800" />
-      <p className="mt-2">Win Ratio: <span className="text-green-400">{stats.winRatio}%</span></p>
-      <p>Avg Tickets/Play: <span className="text-yellow-400">{stats.avgTickets}</span></p>
+      <p className="mt-2">🎯 Win Ratio: <span className="text-green-400">{stats.winRatio}%</span></p>
+      <p>🎟 Avg Tickets/Play: <span className="text-yellow-400">{stats.avgTickets}</span></p>
     </div>
   );
 }
-
